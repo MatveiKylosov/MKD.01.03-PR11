@@ -65,7 +65,8 @@
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:orientation="horizontal"
+            android:orientation="vertical"
+            android:gravity="center_horizontal"
             android:background="@color/white">
 
             <LinearLayout
@@ -156,7 +157,6 @@
                             android:src="@drawable/shield"
                             android:background="@drawable/rectanglemy"/>
                     </LinearLayout>
-
                     <!--Cards-->
                     <HorizontalScrollView
                         android:layout_width="match_parent"
@@ -276,6 +276,23 @@
                         </LinearLayout>
                     </HorizontalScrollView>
                 </LinearLayout>
+            </LinearLayout>
+
+            <!--Advert-->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center_horizontal"
+                android:layout_margin="10dp">
+
+                <ImageButton
+                    android:layout_width="match_parent"
+                    android:layout_height="100dp"
+                    android:src="@drawable/advert"
+                    android:scaleType="fitXY"
+                    />
+
+
             </LinearLayout>
         </LinearLayout>
     </ScrollView>

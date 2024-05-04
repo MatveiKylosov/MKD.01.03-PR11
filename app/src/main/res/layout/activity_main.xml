@@ -8,6 +8,7 @@
     android:orientation="vertical"
     tools:context=".MainActivity">
 
+    <!--Верхняя строка-->
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="60dp"
@@ -19,10 +20,11 @@
             android:background="@drawable/avatar"
             android:layout_width="40dp"
             android:layout_height="40dp"
-            android:layout_margin="5dp"
+            android:layout_marginLeft="15dp"
             />
 
         <EditText
+            android:fontFamily="@font/sb"
             android:layout_width="0dp"
             android:layout_height="match_parent"
             android:layout_weight="1"
@@ -56,8 +58,225 @@
 
     <ScrollView
         android:layout_width="match_parent"
-        android:layout_height="match_parent"
+        android:layout_height="wrap_content"
         android:orientation="vertical">
 
+        <!--Основное-->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:background="@color/white">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:background="@drawable/gradient_radius">
+
+                <LinearLayout
+                    android:orientation="horizontal"
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:layout_marginLeft="15dp"
+                    android:layout_marginRight="15dp"
+                    android:gravity="center_vertical">
+
+                    <!--Надпись кошелёк и стрелка-->
+                <LinearLayout
+                    android:orientation="horizontal"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:gravity="center_vertical">
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Кошелёк "
+                        android:fontFamily="@font/sb"
+                        android:textSize="19dp"
+                        android:textColor="@color/white"
+                        />
+
+                    <ImageView
+                        android:layout_width="20dp"
+                        android:layout_height="20dp"
+                        android:src="@drawable/arrow"
+                        android:layout_marginTop="2dp"
+                        android:layout_marginLeft="5dp"
+
+                        />
+                </LinearLayout>
+
+                    <Space
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"/>
+
+                    <ImageView
+                        android:layout_width="25dp"
+                        android:layout_height="25dp"
+                        android:src="@drawable/eye"
+                        android:gravity="right"
+                        />
+
+                    <ImageView
+                        android:layout_marginLeft="10dp"
+                        android:layout_width="20dp"
+                        android:layout_height="20dp"
+                        android:src="@drawable/dots"
+                        android:gravity="right"
+                        />
+                </LinearLayout>
+
+                <!--Cards-->
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:gravity="center_vertical"
+                    android:layout_marginBottom="15dp"
+                    android:layout_marginLeft="15dp">
+
+                    <!--QR AND SHIELD-->
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical"
+                        android:gravity="center_vertical">
+                        <ImageButton
+                            android:layout_width="45dp"
+                            android:layout_height="55dp"
+                            android:src="@drawable/qrcode"
+                            android:background="@drawable/rectanglemy"/>
+
+                        <ImageButton
+                            android:layout_marginTop="5dp"
+                            android:layout_width="44dp"
+                            android:layout_height="55dp"
+                            android:src="@drawable/shield"
+                            android:background="@drawable/rectanglemy"/>
+                    </LinearLayout>
+
+                    <!--Cards-->
+                    <HorizontalScrollView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal"
+                        android:scrollbars="none"
+                        android:layout_marginLeft="10dp">
+                        <LinearLayout
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:gravity="center_vertical">
+
+                            <!--Карта-->
+                            <LinearLayout
+                                android:layout_width="120dp"
+                                android:layout_height="120dp"
+                                android:background="@drawable/rectanglemy"
+                                android:orientation="vertical"
+                                android:padding="10dp">
+
+                                <ImageView
+                                    android:layout_width="36dp"
+                                    android:layout_height="36dp"
+                                    android:src="@drawable/card"/>
+
+                                <Space
+                                    android:layout_width="0dp"
+                                    android:layout_height="30dp"/>
+
+                                <TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:text="0 ₽"
+                                    android:textColor="@color/white"
+                                    android:fontFamily="@font/sb"
+                                    />
+
+                                <TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:text="Зарплатная ●● 2222"
+                                    android:textSize="9dp"
+                                    android:textColor="@color/white"
+                                    android:fontFamily="@font/sb"
+                                    />
+                            </LinearLayout>
+
+                            <LinearLayout
+                                android:layout_marginLeft="10dp"
+                                android:layout_width="120dp"
+                                android:layout_height="120dp"
+                                android:background="@drawable/rectanglemy"
+                                android:orientation="vertical"
+                                android:padding="10dp">
+
+                                <ImageView
+                                    android:layout_width="36dp"
+                                    android:layout_height="36dp"
+                                    android:src="@drawable/card"/>
+
+                                <Space
+                                    android:layout_width="0dp"
+                                    android:layout_height="30dp"/>
+
+                                <TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:text="0 ₽"
+                                    android:textColor="@color/white"
+                                    android:fontFamily="@font/sb"
+                                    />
+
+                                <TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:text="Зарплатная ●● 2222"
+                                    android:textSize="9dp"
+                                    android:textColor="@color/white"
+                                    android:fontFamily="@font/sb"
+                                    />
+                            </LinearLayout>
+
+                            <LinearLayout
+                                android:layout_marginLeft="10dp"
+                                android:layout_width="120dp"
+                                android:layout_height="120dp"
+                                android:background="@drawable/rectanglemy"
+                                android:orientation="vertical"
+                                android:padding="10dp">
+
+                                <ImageView
+                                    android:layout_width="36dp"
+                                    android:layout_height="36dp"
+                                    android:src="@drawable/card"/>
+
+                                <Space
+                                    android:layout_width="0dp"
+                                    android:layout_height="30dp"/>
+
+                                <TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:text="0 ₽"
+                                    android:textColor="@color/white"
+                                    android:fontFamily="@font/sb"
+                                    />
+
+                                <TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:text="Зарплатная ●● 2222"
+                                    android:textSize="9dp"
+                                    android:textColor="@color/white"
+                                    android:fontFamily="@font/sb"
+                                    />
+                            </LinearLayout>
+                        </LinearLayout>
+                    </HorizontalScrollView>
+                </LinearLayout>
+            </LinearLayout>
+        </LinearLayout>
     </ScrollView>
 </LinearLayout>

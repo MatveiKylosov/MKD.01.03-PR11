@@ -380,8 +380,9 @@
                         <RelativeLayout
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
-                            android:padding="10dp">
-
+                            android:padding="10dp"
+                            android:clipChildren="false"
+                            android:clipToPadding="false">
                             <FrameLayout
                                 android:id="@+id/frame"
                                 android:layout_width="65dp"
@@ -399,18 +400,16 @@
                                     android:textSize="16dp" />
                             </FrameLayout>
 
-                            <Button
+                            <ImageButton
                                 android:layout_width="20dp"
                                 android:layout_height="20dp"
                                 android:layout_alignTop="@id/frame"
                                 android:layout_alignEnd="@id/frame"
-                                android:layout_marginTop="-6dp"
-                                android:layout_marginEnd="-10dp"
+                                android:layout_marginTop="-5dp"
+                                android:layout_marginEnd="-11dp"
                                 android:background="@android:color/transparent"
-                                android:text="✕"
-                                android:textSize="16dp"
-                                android:textColor="#ebebeb"
-                                android:textStyle="bold"/>
+                                android:src="@drawable/Close"
+                                android:scaleType="centerInside" />
 
                             <TextView
                                 android:layout_width="wrap_content"

@@ -408,7 +408,7 @@
                                 android:layout_marginTop="-5dp"
                                 android:layout_marginEnd="-11dp"
                                 android:background="@android:color/transparent"
-                                android:src="@drawable/Close"
+                                android:src="@drawable/close"
                                 android:scaleType="centerInside" />
 
                             <TextView
@@ -432,9 +432,14 @@
                             android:padding="10dp">
 
                             <FrameLayout
-                                android:background="@drawable/transfer_for_leonig"
-                                android:layout_width="65dp"
-                                android:layout_height="65dp">
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content">
+
+                                <ImageView
+                                    android:layout_width="65dp"
+                                    android:layout_height="65dp"
+                                    android:background="@drawable/transfer_for_leonig" />
+
                                 <TextView
                                     android:layout_width="wrap_content"
                                     android:layout_height="wrap_content"
@@ -443,6 +448,24 @@
                                     android:textSize="16dp"
                                     android:textColor="#6a6a6a"
                                     android:layout_gravity="center" />
+
+                                <FrameLayout
+                                    android:layout_width="20dp"
+                                    android:layout_height="20dp"
+                                    android:layout_gravity="bottom|end"
+                                    android:layout_marginBottom="-2dp"
+                                    android:layout_marginEnd="-2dp"
+                                    android:background="@drawable/orange_circle">
+
+                                    <TextView
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:layout_gravity="center"
+                                        android:text="1"
+                                        android:fontFamily="@font/sb"
+                                        android:textSize="10dp"
+                                        android:textColor="#FFFFFF" />
+                                </FrameLayout>
                             </FrameLayout>
 
                             <TextView
@@ -456,6 +479,214 @@
                                 android:textColor="@color/black"
                                 />
                         </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:orientation="vertical"
+                            android:gravity="center"
+                            android:padding="10dp">
+
+                            <FrameLayout
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content">
+
+                                <ImageView
+                                    android:layout_width="65dp"
+                                    android:layout_height="65dp"
+                                    android:background="@drawable/transfer_for_leonig" />
+
+                                <TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:text="Л Л"
+                                    android:fontFamily="@font/sb"
+                                    android:textSize="16dp"
+                                    android:textColor="#6a6a6a"
+                                    android:layout_gravity="center" />
+
+                                <FrameLayout
+                                    android:layout_width="20dp"
+                                    android:layout_height="20dp"
+                                    android:layout_gravity="bottom|end"
+                                    android:layout_marginBottom="-2dp"
+                                    android:layout_marginEnd="-2dp"
+                                    android:background="@drawable/orange_circle">
+
+                                    <TextView
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:layout_gravity="center"
+                                        android:text="1"
+                                        android:fontFamily="@font/sb"
+                                        android:textSize="10dp"
+                                        android:textColor="#FFFFFF" />
+                                </FrameLayout>
+                            </FrameLayout>
+
+                            <TextView
+                                android:layout_marginTop="10dp"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="Леонид\nЛукиных"
+                                android:textAlignment="center"
+                                android:fontFamily="@font/sb"
+                                android:textSize="16dp"
+                                android:textColor="@color/black"
+                                />
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:orientation="vertical"
+                            android:gravity="center"
+                            android:padding="10dp">
+
+                            <FrameLayout
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content">
+
+                                <ImageView
+                                    android:layout_width="65dp"
+                                    android:layout_height="65dp"
+                                    android:background="@drawable/transfer_for_leonig" />
+
+                                <TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:text="Л Л"
+                                    android:fontFamily="@font/sb"
+                                    android:textSize="16dp"
+                                    android:textColor="#6a6a6a"
+                                    android:layout_gravity="center" />
+
+                                <FrameLayout
+                                    android:layout_width="20dp"
+                                    android:layout_height="20dp"
+                                    android:layout_gravity="bottom|end"
+                                    android:layout_marginBottom="-2dp"
+                                    android:layout_marginEnd="-2dp"
+                                    android:background="@drawable/orange_circle">
+
+                                    <TextView
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:layout_gravity="center"
+                                        android:text="1"
+                                        android:fontFamily="@font/sb"
+                                        android:textSize="10dp"
+                                        android:textColor="#FFFFFF" />
+                                </FrameLayout>
+                            </FrameLayout>
+
+                            <TextView
+                                android:layout_marginTop="10dp"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="Леонид\nЛукиных"
+                                android:textAlignment="center"
+                                android:fontFamily="@font/sb"
+                                android:textSize="16dp"
+                                android:textColor="@color/black"
+                                />
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:orientation="vertical"
+                            android:gravity="center"
+                            android:padding="10dp">
+
+                            <FrameLayout
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content">
+
+                                <ImageView
+                                    android:layout_width="65dp"
+                                    android:layout_height="65dp"
+                                    android:background="@drawable/transfer_for_leonig" />
+
+                                <TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:text="Л Л"
+                                    android:fontFamily="@font/sb"
+                                    android:textSize="16dp"
+                                    android:textColor="#6a6a6a"
+                                    android:layout_gravity="center" />
+
+                                <FrameLayout
+                                    android:layout_width="20dp"
+                                    android:layout_height="20dp"
+                                    android:layout_gravity="bottom|end"
+                                    android:layout_marginBottom="-2dp"
+                                    android:layout_marginEnd="-2dp"
+                                    android:background="@drawable/orange_circle">
+
+                                    <TextView
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:layout_gravity="center"
+                                        android:text="1"
+                                        android:fontFamily="@font/sb"
+                                        android:textSize="10dp"
+                                        android:textColor="#FFFFFF" />
+                                </FrameLayout>
+                            </FrameLayout>
+
+                            <TextView
+                                android:layout_marginTop="10dp"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="Леонид\nЛукиных"
+                                android:textAlignment="center"
+                                android:fontFamily="@font/sb"
+                                android:textSize="16dp"
+                                android:textColor="@color/black"
+                                />
+                        </LinearLayout>
+                    </LinearLayout>
+                </HorizontalScrollView>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:layout_marginTop="30dp">
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Расходы в мае"
+                        android:fontFamily="@font/sb"
+                        android:textSize="19dp"
+                        android:textColor="@color/black"
+                        />
+                    <Space
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"/>
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Все"
+                        android:fontFamily="@font/sb"
+                        android:textSize="16dp"
+                        android:textColor="#138127"
+                        />
+                </LinearLayout>
+                <HorizontalScrollView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:scrollbars="none">
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:gravity="center_vertical">
+
+                        
                     </LinearLayout>
                 </HorizontalScrollView>
             </LinearLayout>

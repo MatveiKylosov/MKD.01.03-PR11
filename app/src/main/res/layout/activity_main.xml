@@ -355,13 +355,13 @@
                             android:padding="10dp">
                             <LinearLayout
                                 android:background="@drawable/transfer_money"
-                                android:layout_width="65dp"
-                                android:layout_height="65dp"
+                                android:layout_width="60dp"
+                                android:layout_height="60dp"
                                 android:gravity="center"
                                 >
                                 <ImageView
-                                    android:layout_width="40dp"
-                                    android:layout_height="40dp"
+                                    android:layout_width="35dp"
+                                    android:layout_height="35dp"
                                     android:src="@drawable/trn"/>
                             </LinearLayout>
 
@@ -372,7 +372,7 @@
                                 android:text="Новый\nПеревод"
                                 android:textAlignment="center"
                                 android:fontFamily="@font/sb"
-                                android:textSize="16dp"
+                                android:textSize="14dp"
                                 android:textColor="#187e2a"
                                 />
                         </LinearLayout>
@@ -385,8 +385,8 @@
                             android:clipToPadding="false">
                             <FrameLayout
                                 android:id="@+id/frame"
-                                android:layout_width="65dp"
-                                android:layout_height="65dp"
+                                android:layout_width="60dp"
+                                android:layout_height="60dp"
 
                                 android:background="@drawable/transfer_for_leonig">
 
@@ -421,7 +421,7 @@
                                 android:text="Леонид\nЛукиных"
                                 android:textColor="@color/black"
                                 android:textAlignment="center"
-                                android:textSize="16dp" />
+                                android:textSize="14dp" />
                         </RelativeLayout>
 
                         <LinearLayout
@@ -436,8 +436,8 @@
                                 android:layout_height="wrap_content">
 
                                 <ImageView
-                                    android:layout_width="65dp"
-                                    android:layout_height="65dp"
+                                    android:layout_width="60dp"
+                                    android:layout_height="60dp"
                                     android:background="@drawable/transfer_for_leonig" />
 
                                 <TextView
@@ -445,7 +445,7 @@
                                     android:layout_height="wrap_content"
                                     android:text="Л Л"
                                     android:fontFamily="@font/sb"
-                                    android:textSize="16dp"
+                                    android:textSize="14dp"
                                     android:textColor="#6a6a6a"
                                     android:layout_gravity="center" />
 
@@ -475,7 +475,7 @@
                                 android:text="Леонид\nЛукиных"
                                 android:textAlignment="center"
                                 android:fontFamily="@font/sb"
-                                android:textSize="16dp"
+                                android:textSize="14dp"
                                 android:textColor="@color/black"
                                 />
                         </LinearLayout>
@@ -492,8 +492,8 @@
                                 android:layout_height="wrap_content">
 
                                 <ImageView
-                                    android:layout_width="65dp"
-                                    android:layout_height="65dp"
+                                    android:layout_width="60dp"
+                                    android:layout_height="60dp"
                                     android:background="@drawable/transfer_for_leonig" />
 
                                 <TextView
@@ -501,7 +501,7 @@
                                     android:layout_height="wrap_content"
                                     android:text="Л Л"
                                     android:fontFamily="@font/sb"
-                                    android:textSize="16dp"
+                                    android:textSize="14dp"
                                     android:textColor="#6a6a6a"
                                     android:layout_gravity="center" />
 
@@ -531,7 +531,7 @@
                                 android:text="Леонид\nЛукиных"
                                 android:textAlignment="center"
                                 android:fontFamily="@font/sb"
-                                android:textSize="16dp"
+                                android:textSize="14dp"
                                 android:textColor="@color/black"
                                 />
                         </LinearLayout>
@@ -548,8 +548,8 @@
                                 android:layout_height="wrap_content">
 
                                 <ImageView
-                                    android:layout_width="65dp"
-                                    android:layout_height="65dp"
+                                    android:layout_width="60dp"
+                                    android:layout_height="60dp"
                                     android:background="@drawable/transfer_for_leonig" />
 
                                 <TextView
@@ -557,7 +557,7 @@
                                     android:layout_height="wrap_content"
                                     android:text="Л Л"
                                     android:fontFamily="@font/sb"
-                                    android:textSize="16dp"
+                                    android:textSize="14dp"
                                     android:textColor="#6a6a6a"
                                     android:layout_gravity="center" />
 
@@ -587,7 +587,7 @@
                                 android:text="Леонид\nЛукиных"
                                 android:textAlignment="center"
                                 android:fontFamily="@font/sb"
-                                android:textSize="16dp"
+                                android:textSize="14dp"
                                 android:textColor="@color/black"
                                 />
                         </LinearLayout>
@@ -604,8 +604,8 @@
                                 android:layout_height="wrap_content">
 
                                 <ImageView
-                                    android:layout_width="65dp"
-                                    android:layout_height="65dp"
+                                    android:layout_width="60dp"
+                                    android:layout_height="60dp"
                                     android:background="@drawable/transfer_for_leonig" />
 
                                 <TextView
@@ -613,7 +613,7 @@
                                     android:layout_height="wrap_content"
                                     android:text="Л Л"
                                     android:fontFamily="@font/sb"
-                                    android:textSize="16dp"
+                                    android:textSize="14dp"
                                     android:textColor="#6a6a6a"
                                     android:layout_gravity="center" />
 
@@ -643,7 +643,7 @@
                                 android:text="Леонид\nЛукиных"
                                 android:textAlignment="center"
                                 android:fontFamily="@font/sb"
-                                android:textSize="16dp"
+                                android:textSize="14dp"
                                 android:textColor="@color/black"
                                 />
                         </LinearLayout>
@@ -676,7 +676,9 @@
                         android:textColor="#138127"
                         />
                 </LinearLayout>
+
                 <HorizontalScrollView
+                    android:layout_marginTop="15dp"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:orientation="horizontal"
@@ -686,7 +688,116 @@
                         android:layout_height="wrap_content"
                         android:gravity="center_vertical">
 
-                        
+                        <LinearLayout
+                            android:layout_width="150dp"
+                            android:layout_height="150dp"
+                            android:background="@drawable/shadow"
+                            android:orientation="vertical">
+
+                            <ImageView
+                                android:layout_width="40dp"
+                                android:layout_height="40dp"
+                                android:src="@drawable/piechart"
+                                android:layout_marginTop="15dp"
+                                android:layout_marginLeft="12dp"/>
+
+
+                            <TextView
+                                android:layout_marginTop="20dp"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="1 198 ₽"
+                                android:textColor="@color/black"
+                                android:fontFamily="@font/sb"
+                                android:textSize="16dp"
+                                android:layout_marginLeft="15dp"
+                                />
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="Все расходы\nиз 45 000 ₽"
+                                android:layout_marginLeft="15dp"
+                                android:textSize="11dp"
+                                android:layout_marginTop="5dp"
+                                android:textColor="#898989"
+                                android:fontFamily="@font/sb"
+                                />
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_width="150dp"
+                            android:layout_height="150dp"
+                            android:background="@drawable/shadow"
+                            android:orientation="vertical">
+
+                            <ImageView
+                                android:layout_width="40dp"
+                                android:layout_height="40dp"
+                                android:src="@drawable/bus"
+                                android:layout_marginTop="15dp"
+                                android:layout_marginLeft="12dp"/>
+
+
+                            <TextView
+                                android:layout_marginTop="35dp"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="Транспорт"
+                                android:textColor="#898989"
+                                android:fontFamily="@font/sb"
+                                android:textSize="13dp"
+                                android:layout_marginLeft="15dp"
+                                />
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="928 ₽"
+                                android:layout_marginLeft="15dp"
+                                android:textSize="13dp"
+                                android:layout_marginTop="5dp"
+                                android:textColor="@color/black"
+                                android:fontFamily="@font/sb"
+                                />
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_width="150dp"
+                            android:layout_height="150dp"
+                            android:background="@drawable/shadow"
+                            android:orientation="vertical">
+
+                            <ImageView
+                                android:layout_width="40dp"
+                                android:layout_height="40dp"
+                                android:src="@drawable/glass"
+                                android:layout_marginTop="15dp"
+                                android:layout_marginLeft="12dp"/>
+
+
+                            <TextView
+                                android:layout_marginTop="22dp"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="Рестораны\nи кафе"
+                                android:textColor="#898989"
+                                android:fontFamily="@font/sb"
+                                android:textSize="13dp"
+                                android:layout_marginLeft="15dp"
+                                />
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="928 ₽"
+                                android:layout_marginLeft="15dp"
+                                android:textSize="13dp"
+                                android:layout_marginTop="5dp"
+                                android:textColor="@color/black"
+                                android:fontFamily="@font/sb"
+                                />
+                        </LinearLayout>
                     </LinearLayout>
                 </HorizontalScrollView>
             </LinearLayout>

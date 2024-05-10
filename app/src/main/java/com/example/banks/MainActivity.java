@@ -66,7 +66,7 @@ public class MainActivity extends AppCompatActivity {
         toast.show();
     }
     public void OpenCreateTrans(View view) {
-        Toast toast = Toast.makeText(this, "Открыть переводы", Toast.LENGTH_LONG);
+        Toast toast = Toast.makeText(this, "Создать перевод", Toast.LENGTH_LONG);
         toast.show();
     }
     public void CloseLeonid(View view) {

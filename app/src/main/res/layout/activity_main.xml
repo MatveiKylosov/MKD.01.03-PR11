@@ -836,12 +836,12 @@
                     android:layout_height="wrap_content"
                     android:orientation="horizontal"
                     android:gravity="center"
-                    android:layout_marginTop="30dp"
-                    android:onClick="OpenCredits">
+                    android:layout_marginTop="30dp">
                     <LinearLayout
                         android:gravity="center"
                         android:layout_width="wrap_content"
-                        android:layout_height="wrap_content">
+                        android:layout_height="wrap_content"
+                        android:onClick="OpenCredits">
                         <TextView
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
@@ -862,11 +862,14 @@
                         android:layout_width="0dp"
                         android:layout_height="wrap_content"
                         android:layout_weight="1"/>
-                    <ImageView
+                    <ImageButton
                         android:layout_width="20dp"
                         android:layout_height="20dp"
                         android:src="@drawable/plus"
-                        android:gravity="right"/>
+                        android:background="@android:color/transparent"
+                        android:scaleType="fitXY"
+                        android:gravity="right"
+                        android:onClick="CreateCredits"/>
 
                 </LinearLayout>
 
@@ -1248,14 +1251,15 @@
                     android:orientation="horizontal"
                     android:layout_marginTop="30dp"
                     android:onClick="OpenCourse">
+
                     <TextView
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:text="Курсы валют"
                         android:fontFamily="@font/sb"
-                        android:textSize="19dp"
+                        android:text="Курсы валют"
                         android:textColor="@color/black"
-                        />
+                        android:textSize="19dp" />
+
                     <Space
                         android:layout_width="0dp"
                         android:layout_height="wrap_content"

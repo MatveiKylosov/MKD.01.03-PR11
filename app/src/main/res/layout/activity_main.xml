@@ -21,6 +21,7 @@
             android:layout_width="40dp"
             android:layout_height="40dp"
             android:layout_marginLeft="15dp"
+            android:onClick="OpenProfile"
             />
 
         <EditText
@@ -44,6 +45,7 @@
             android:background="@android:color/transparent"
             android:scaleType="fitXY"
             android:layout_marginRight="10dp"
+            android:onClick="OpenStore"
             />
 
         <ImageButton
@@ -53,12 +55,14 @@
             android:src="@drawable/menu"
             android:background="@android:color/transparent"
             android:scaleType="fitXY"
+            android:onClick="OpenMenu"
             />
     </LinearLayout>
 
     <ScrollView
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
+        android:layout_height="0dp"
+        android:layout_weight="1"
         android:orientation="vertical">
 
         <!--Основное-->
@@ -88,7 +92,8 @@
                     android:orientation="horizontal"
                     android:layout_width="wrap_content"
                     android:layout_height="match_parent"
-                    android:gravity="center_vertical">
+                    android:gravity="center_vertical"
+                    android:onClick="OpenWallet">
                     <TextView
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
@@ -103,9 +108,7 @@
                         android:layout_height="20dp"
                         android:src="@drawable/arrow"
                         android:layout_marginTop="2dp"
-                        android:layout_marginLeft="5dp"
-
-                        />
+                        android:layout_marginLeft="5dp"/>
                 </LinearLayout>
 
                     <Space
@@ -113,19 +116,25 @@
                         android:layout_height="wrap_content"
                         android:layout_weight="1"/>
 
-                    <ImageView
+                    <ImageButton
                         android:layout_width="25dp"
                         android:layout_height="25dp"
                         android:src="@drawable/eye"
                         android:gravity="right"
+                        android:background="@android:color/transparent"
+                        android:scaleType="fitXY"
+                        android:onClick="OpenHidden"
                         />
 
-                    <ImageView
+                    <ImageButton
                         android:layout_marginLeft="10dp"
                         android:layout_width="20dp"
                         android:layout_height="20dp"
                         android:src="@drawable/dots"
                         android:gravity="right"
+                        android:background="@android:color/transparent"
+                        android:scaleType="fitXY"
+                        android:onClick="OpenDots"
                         />
                 </LinearLayout>
 
@@ -148,14 +157,16 @@
                             android:layout_width="45dp"
                             android:layout_height="55dp"
                             android:src="@drawable/qrcode"
-                            android:background="@drawable/rectanglemy"/>
+                            android:background="@drawable/rectanglemy"
+                            android:onClick="OpenQR"/>
 
                         <ImageButton
                             android:layout_marginTop="5dp"
                             android:layout_width="44dp"
                             android:layout_height="55dp"
                             android:src="@drawable/shield"
-                            android:background="@drawable/rectanglemy"/>
+                            android:background="@drawable/rectanglemy"
+                            android:onClick="OpenShield"/>
                     </LinearLayout>
                     <!--Cards-->
                     <HorizontalScrollView
@@ -175,7 +186,8 @@
                                 android:layout_height="120dp"
                                 android:background="@drawable/rectanglemy"
                                 android:orientation="vertical"
-                                android:padding="10dp">
+                                android:padding="10dp"
+                                android:onClick="OpenCard">
 
                                 <ImageView
                                     android:layout_width="36dp"
@@ -210,7 +222,8 @@
                                 android:layout_height="120dp"
                                 android:background="@drawable/rectanglemy"
                                 android:orientation="vertical"
-                                android:padding="10dp">
+                                android:padding="10dp"
+                                android:onClick="OpenCard">
 
                                 <ImageView
                                     android:layout_width="36dp"
@@ -245,7 +258,8 @@
                                 android:layout_height="120dp"
                                 android:background="@drawable/rectanglemy"
                                 android:orientation="vertical"
-                                android:padding="10dp">
+                                android:padding="10dp"
+                                android:onClick="OpenCard">
 
                                 <ImageView
                                     android:layout_width="36dp"
@@ -284,7 +298,8 @@
                 android:layout_width="match_parent"
                 android:layout_height="150dp"
                 app:cardCornerRadius="15dp"
-                app:cardElevation="0dp">
+                app:cardElevation="0dp"
+                android:onClick="OpenAdvert">
 
                 <ImageView
                     android:id="@+id/imageView"
@@ -313,7 +328,8 @@
                 <LinearLayout
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:orientation="horizontal">
+                    android:orientation="horizontal"
+                    android:onClick="OpenTrans">
                     <TextView
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
@@ -352,7 +368,8 @@
                             android:layout_height="wrap_content"
                             android:orientation="vertical"
                             android:gravity="center"
-                            android:padding="10dp">
+                            android:padding="10dp"
+                            android:onClick="OpenCreateTrans">
                             <LinearLayout
                                 android:background="@drawable/transfer_money"
                                 android:layout_width="60dp"
@@ -387,7 +404,7 @@
                                 android:id="@+id/frame"
                                 android:layout_width="60dp"
                                 android:layout_height="60dp"
-
+                                android:onClick="OpenLeonid"
                                 android:background="@drawable/transfer_for_leonig">
 
                                 <TextView
@@ -409,7 +426,8 @@
                                 android:layout_marginEnd="-11dp"
                                 android:background="@android:color/transparent"
                                 android:src="@drawable/close"
-                                android:scaleType="centerInside" />
+                                android:scaleType="centerInside"
+                                android:onClick="CloseLeonid"/>
 
                             <TextView
                                 android:layout_width="wrap_content"
@@ -421,7 +439,8 @@
                                 android:text="Леонид\nЛукиных"
                                 android:textColor="@color/black"
                                 android:textAlignment="center"
-                                android:textSize="14dp" />
+                                android:textSize="14dp"
+                                android:onClick="OpenLeonid"/>
                         </RelativeLayout>
 
                         <LinearLayout
@@ -429,7 +448,8 @@
                             android:layout_height="wrap_content"
                             android:orientation="vertical"
                             android:gravity="center"
-                            android:padding="10dp">
+                            android:padding="10dp"
+                            android:onClick="OpenLeonid">
 
                             <FrameLayout
                                 android:layout_width="wrap_content"
@@ -485,7 +505,8 @@
                             android:layout_height="wrap_content"
                             android:orientation="vertical"
                             android:gravity="center"
-                            android:padding="10dp">
+                            android:padding="10dp"
+                            android:onClick="OpenLeonid">
 
                             <FrameLayout
                                 android:layout_width="wrap_content"
@@ -541,7 +562,8 @@
                             android:layout_height="wrap_content"
                             android:orientation="vertical"
                             android:gravity="center"
-                            android:padding="10dp">
+                            android:padding="10dp"
+                            android:onClick="OpenLeonid">
 
                             <FrameLayout
                                 android:layout_width="wrap_content"
@@ -597,7 +619,8 @@
                             android:layout_height="wrap_content"
                             android:orientation="vertical"
                             android:gravity="center"
-                            android:padding="10dp">
+                            android:padding="10dp"
+                            android:onClick="OpenLeonid">
 
                             <FrameLayout
                                 android:layout_width="wrap_content"
@@ -654,7 +677,8 @@
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:orientation="horizontal"
-                    android:layout_marginTop="30dp">
+                    android:layout_marginTop="30dp"
+                    android:onClick="OpenExpenses">
                     <TextView
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
@@ -692,7 +716,8 @@
                             android:layout_width="150dp"
                             android:layout_height="150dp"
                             android:background="@drawable/shadow"
-                            android:orientation="vertical">
+                            android:orientation="vertical"
+                            android:onClick="OpenAllExpenses">
 
                             <ImageView
                                 android:layout_width="40dp"
@@ -729,7 +754,8 @@
                             android:layout_width="150dp"
                             android:layout_height="150dp"
                             android:background="@drawable/shadow"
-                            android:orientation="vertical">
+                            android:orientation="vertical"
+                            android:onClick="OpenAuto">
 
                             <ImageView
                                 android:layout_width="40dp"
@@ -766,7 +792,8 @@
                             android:layout_width="150dp"
                             android:layout_height="150dp"
                             android:background="@drawable/shadow"
-                            android:orientation="vertical">
+                            android:orientation="vertical"
+                            android:onClick="OpenCafe">
 
                             <ImageView
                                 android:layout_width="40dp"
@@ -807,7 +834,8 @@
                     android:layout_height="wrap_content"
                     android:orientation="horizontal"
                     android:gravity="center"
-                    android:layout_marginTop="30dp">
+                    android:layout_marginTop="30dp"
+                    android:onClick="OpenCredits">
                     <LinearLayout
                         android:gravity="center"
                         android:layout_width="wrap_content"
@@ -844,7 +872,8 @@
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:orientation="horizontal"
-                    android:layout_marginTop="30dp">
+                    android:layout_marginTop="30dp"
+                    android:onClick="OpenAllServices">
                     <TextView
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
@@ -870,7 +899,8 @@
                             android:layout_width="150dp"
                             android:layout_height="150dp"
                             android:background="@drawable/shadow"
-                            android:orientation="vertical">
+                            android:orientation="vertical"
+                            android:onClick="CreateCredits">
 
                             <ImageView
                                 android:layout_width="40dp"
@@ -907,7 +937,8 @@
                             android:layout_width="150dp"
                             android:layout_height="150dp"
                             android:background="@drawable/shadow"
-                            android:orientation="vertical">
+                            android:orientation="vertical"
+                            android:onClick="OpenAllServices">
 
                             <ImageView
                                 android:layout_width="35dp"
@@ -933,7 +964,8 @@
                             android:layout_width="150dp"
                             android:layout_height="150dp"
                             android:background="@drawable/shadow"
-                            android:orientation="vertical">
+                            android:orientation="vertical"
+                            android:onClick="OpenAllAdvert">
 
                             <ImageView
                                 android:layout_width="40dp"
@@ -972,7 +1004,8 @@
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:orientation="horizontal"
-                    android:layout_marginTop="30dp">
+                    android:layout_marginTop="30dp"
+                    android:onClick="OpenRecommend">
                     <TextView
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
@@ -1010,7 +1043,8 @@
                             android:layout_width="150dp"
                             android:layout_height="280dp"
                             android:background="@drawable/shadow"
-                            android:orientation="vertical">
+                            android:orientation="vertical"
+                            android:onClick="OpenJaba">
 
                             <ImageView
                                 android:layout_width="match_parent"
@@ -1034,7 +1068,8 @@
                             android:layout_width="150dp"
                             android:layout_height="280dp"
                             android:background="@drawable/shadow"
-                            android:orientation="vertical">
+                            android:orientation="vertical"
+                            android:onClick="OpenJaba">
 
                             <FrameLayout
                                 android:layout_width="150dp"
@@ -1120,7 +1155,8 @@
                             android:layout_width="150dp"
                             android:layout_height="280dp"
                             android:background="@drawable/shadow"
-                            android:orientation="vertical">
+                            android:orientation="vertical"
+                            android:onClick="OpenJaba">
 
                             <FrameLayout
                                 android:layout_width="150dp"
@@ -1203,7 +1239,396 @@
                         </LinearLayout>
                     </LinearLayout>
                 </HorizontalScrollView>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:layout_marginTop="30dp"
+                    android:onClick="OpenCourse">
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Курсы валют"
+                        android:fontFamily="@font/sb"
+                        android:textSize="19dp"
+                        android:textColor="@color/black"
+                        />
+                    <Space
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"/>
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Ещё"
+                        android:fontFamily="@font/sb"
+                        android:textSize="16dp"
+                        android:textColor="#138127"
+                        />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:layout_marginTop="20dp"
+                    android:layout_marginBottom="20dp"
+                    android:onClick="OpenCNY">
+
+                    <LinearLayout
+                        android:layout_width="0dp"
+                        android:layout_height="80dp"
+                        android:layout_weight="1"
+                        android:orientation="vertical">
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:textSize="12dp"
+                            android:layout_gravity="bottom"
+                            android:fontFamily="@font/sb"
+                            android:textColor="@color/black"
+                            android:layout_marginTop="40dp"
+                            android:text="Купить"/>
+                        <TextView
+                            android:layout_marginTop="10dp"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:textSize="12dp"
+                            android:fontFamily="@font/sb"
+                            android:textColor="@color/black"
+                            android:text="Продать"/>
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="0dp"
+                        android:layout_height="80dp"
+                        android:layout_weight="1"
+                        android:orientation="vertical"
+                        android:onClick="OpenCNY">
+                        <FrameLayout
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content">
+                            <ImageView
+                                android:layout_width="20dp"
+                                android:layout_height="20dp"
+                                android:src="@drawable/chine"
+                                />
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="CNY"
+                                android:fontFamily="@font/sb"
+                                android:textColor="@color/black"
+                                android:layout_marginLeft="25dp"/>
+                            <TextView
+                                android:layout_marginTop="15dp"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="Юань"
+                                android:textSize="10dp"
+                                android:fontFamily="@font/sb"
+                                android:textColor="#898989"
+                                android:layout_marginLeft="25dp"/>
+                        </FrameLayout>
+
+                        <LinearLayout
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="10dp">
+                            <ImageView
+                                android:layout_width="10dp"
+                                android:layout_height="10dp"
+                                android:src="@drawable/cursedown"
+                                android:layout_gravity="center"
+                                android:layout_marginRight="5dp"/>
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="12,75"
+                                android:textColor="@color/black"/>
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content">
+                            <ImageView
+                                android:layout_width="10dp"
+                                android:layout_height="10dp"
+                                android:src="@drawable/upcourse"
+                                android:layout_gravity="center"
+                                android:layout_marginRight="5dp"/>
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="12,58"
+                                android:textColor="@color/black"/>
+                        </LinearLayout>
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="0dp"
+                        android:layout_height="80dp"
+                        android:layout_weight="1"
+                        android:orientation="vertical"
+                        android:onClick="OpenUSD">
+                        <FrameLayout
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content">
+                            <ImageView
+                                android:layout_width="20dp"
+                                android:layout_height="20dp"
+                                android:src="@drawable/usa"
+                                />
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="USD"
+                                android:fontFamily="@font/sb"
+                                android:textColor="@color/black"
+                                android:layout_marginLeft="25dp"/>
+                            <TextView
+                                android:layout_marginTop="15dp"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="Доллар"
+                                android:textSize="10dp"
+                                android:fontFamily="@font/sb"
+                                android:textColor="#898989"
+                                android:layout_marginLeft="25dp"/>
+                        </FrameLayout>
+
+                        <LinearLayout
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="10dp">
+                            <ImageView
+                                android:layout_width="10dp"
+                                android:layout_height="10dp"
+                                android:src="@drawable/cursedown"
+                                android:layout_gravity="center"
+                                android:layout_marginRight="5dp"/>
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="93,20"
+                                android:textColor="@color/black"/>
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content">
+                            <ImageView
+                                android:layout_width="10dp"
+                                android:layout_height="10dp"
+                                android:src="@drawable/cursedown"
+                                android:layout_gravity="center"
+                                android:layout_marginRight="5dp"/>
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="90.40"
+                                android:textColor="@color/black"/>
+                        </LinearLayout>
+                    </LinearLayout>
+                    <LinearLayout
+                        android:layout_width="0dp"
+                        android:layout_height="80dp"
+                        android:layout_weight="1"
+                        android:orientation="vertical"
+                        android:onClick="OpenAED">
+                        <FrameLayout
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content">
+                            <ImageView
+                                android:layout_width="20dp"
+                                android:layout_height="20dp"
+                                android:src="@drawable/oae"
+                                />
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="AED"
+                                android:fontFamily="@font/sb"
+                                android:textColor="@color/black"
+                                android:layout_marginLeft="25dp"/>
+                            <TextView
+                                android:layout_marginTop="15dp"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="Дирхам"
+                                android:textSize="10dp"
+                                android:fontFamily="@font/sb"
+                                android:textColor="#898989"
+                                android:layout_marginLeft="25dp"/>
+                        </FrameLayout>
+
+                        <LinearLayout
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="10dp">
+                            <ImageView
+                                android:layout_width="10dp"
+                                android:layout_height="10dp"
+                                android:src="@drawable/cursedown"
+                                android:layout_gravity="center"
+                                android:layout_marginRight="5dp"/>
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="12,75"
+                                android:textColor="@color/black"
+                                android:textStyle=""/>
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content">
+                            <ImageView
+                                android:layout_width="10dp"
+                                android:layout_height="10dp"
+                                android:src="@drawable/cursedown"
+                                android:layout_gravity="center"
+                                android:layout_marginRight="5dp"/>
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="12,58"
+                                android:textColor="@color/black"/>
+                        </LinearLayout>
+                    </LinearLayout>
+                </LinearLayout>
             </LinearLayout>
         </LinearLayout>
     </ScrollView>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="0.5dp"
+        android:background="#edeef0"/>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:orientation="horizontal"
+        android:gravity="center_vertical"
+        android:background="@color/white">
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:orientation="vertical"
+            android:gravity="center">
+
+            <ImageView
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:src="@drawable/house"
+                android:layout_gravity="center_horizontal"/>
+
+            <TextView
+                android:layout_marginTop="2.5dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Главный"
+                android:textAlignment="center"
+                android:fontFamily="@font/sb"
+                android:textSize="12dp"
+                android:textColor="#187e2a"/>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:orientation="vertical"
+            android:gravity="center">
+
+            <ImageView
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:src="@drawable/safe"
+                android:layout_gravity="center_horizontal"/>
+
+            <TextView
+                android:layout_marginTop="2.5dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Накопления"
+                android:textAlignment="center"
+                android:fontFamily="@font/sb"
+                android:textSize="12dp"
+                android:textColor="#adadad"/>
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:orientation="vertical"
+            android:gravity="center">
+
+            <ImageView
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:src="@drawable/paw"
+                android:layout_gravity="center_horizontal"/>
+
+            <TextView
+                android:layout_marginTop="2.5dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Ассистент"
+                android:textAlignment="center"
+                android:fontFamily="@font/sb"
+                android:textSize="12dp"
+                android:textColor="#adadad"/>
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:orientation="vertical"
+            android:gravity="center">
+
+            <ImageView
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:src="@drawable/buy"
+                android:layout_gravity="center_horizontal"/>
+
+            <TextView
+                android:layout_marginTop="2.5dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Платежи"
+                android:textAlignment="center"
+                android:fontFamily="@font/sb"
+                android:textSize="12dp"
+                android:textColor="#adadad"/>
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:orientation="vertical"
+            android:gravity="center">
+
+            <ImageView
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:src="@drawable/history"
+                android:layout_gravity="center_horizontal"/>
+
+            <TextView
+                android:layout_marginTop="2.5dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Главный"
+                android:textAlignment="center"
+                android:fontFamily="@font/sb"
+                android:textSize="12dp"
+                android:textColor="#adadad"/>
+        </LinearLayout>
+
+    </LinearLayout>
 </LinearLayout>

@@ -298,15 +298,16 @@
                 android:layout_width="match_parent"
                 android:layout_height="150dp"
                 app:cardCornerRadius="15dp"
-                app:cardElevation="0dp"
-                android:onClick="OpenAdvert">
+                app:cardElevation="0dp">
 
-                <ImageView
+                <ImageButton
                     android:id="@+id/imageView"
                     android:layout_width="match_parent"
                     android:layout_height="match_parent"
                     android:src="@drawable/advert"
-                    android:scaleType="centerCrop" />
+                    android:background="@android:color/transparent"
+                    android:scaleType="fitXY"
+                    android:onClick="OpenAdvert"/>
 
                 <Button
                     android:layout_width="20dp"
@@ -314,7 +315,8 @@
                     android:layout_margin="5dp"
                     android:layout_gravity="top|end"
                     android:text="✕"
-                    android:background="@android:color/transparent"/>
+                    android:background="@android:color/transparent"
+                    android:onClick="Close"/>
         </androidx.cardview.widget.CardView>
 
             <!--Переводы-->
@@ -1518,7 +1520,8 @@
             android:layout_height="match_parent"
             android:layout_weight="1"
             android:orientation="vertical"
-            android:gravity="center">
+            android:gravity="center"
+            android:onClick="OpenMain">
 
             <ImageView
                 android:layout_width="30dp"
@@ -1542,7 +1545,8 @@
             android:layout_height="match_parent"
             android:layout_weight="1"
             android:orientation="vertical"
-            android:gravity="center">
+            android:gravity="center"
+            android:onClick="OpenSafe">
 
             <ImageView
                 android:layout_width="30dp"
@@ -1565,7 +1569,8 @@
             android:layout_height="match_parent"
             android:layout_weight="1"
             android:orientation="vertical"
-            android:gravity="center">
+            android:gravity="center"
+            android:onClick="OpenAssistent">
 
             <ImageView
                 android:layout_width="30dp"
@@ -1588,7 +1593,8 @@
             android:layout_height="match_parent"
             android:layout_weight="1"
             android:orientation="vertical"
-            android:gravity="center">
+            android:gravity="center"
+            android:onClick="OpenMenuTrans">
 
             <ImageView
                 android:layout_width="30dp"
@@ -1611,7 +1617,8 @@
             android:layout_height="match_parent"
             android:layout_weight="1"
             android:orientation="vertical"
-            android:gravity="center">
+            android:gravity="center"
+            android:onClick="OpenHistory">
 
             <ImageView
                 android:layout_width="30dp"
@@ -1623,7 +1630,7 @@
                 android:layout_marginTop="2.5dp"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="Главный"
+                android:text="История"
                 android:textAlignment="center"
                 android:fontFamily="@font/sb"
                 android:textSize="12dp"

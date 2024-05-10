@@ -839,6 +839,370 @@
                         android:gravity="right"/>
 
                 </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:layout_marginTop="30dp">
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Сервисы"
+                        android:fontFamily="@font/sb"
+                        android:textSize="19dp"
+                        android:textColor="@color/black"
+                        />
+                </LinearLayout>
+
+                <HorizontalScrollView
+                    android:layout_marginTop="15dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:scrollbars="none">
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:gravity="center_vertical">
+
+                        <LinearLayout
+                            android:layout_width="150dp"
+                            android:layout_height="150dp"
+                            android:background="@drawable/shadow"
+                            android:orientation="vertical">
+
+                            <ImageView
+                                android:layout_width="40dp"
+                                android:layout_height="40dp"
+                                android:src="@drawable/create_credit"
+                                android:layout_marginTop="15dp"
+                                android:layout_marginLeft="12dp"/>
+
+
+                            <TextView
+                                android:layout_marginTop="20dp"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="Оформить"
+                                android:textColor="@color/black"
+                                android:fontFamily="@font/sb"
+                                android:textSize="13dp"
+                                android:layout_marginLeft="15dp"
+                                />
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="Карту, вклад,\nкредит и другое"
+                                android:layout_marginLeft="15dp"
+                                android:textSize="11dp"
+                                android:layout_marginTop="5dp"
+                                android:textColor="#898989"
+                                android:fontFamily="@font/sb"
+                                />
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_width="150dp"
+                            android:layout_height="150dp"
+                            android:background="@drawable/shadow"
+                            android:orientation="vertical">
+
+                            <ImageView
+                                android:layout_width="35dp"
+                                android:layout_height="35dp"
+                                android:src="@drawable/menu_green"
+                                android:layout_marginTop="20dp"
+                                android:layout_marginLeft="12dp"/>
+
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="Все\nсервисы"
+                                android:layout_marginLeft="15dp"
+                                android:textSize="13dp"
+                                android:layout_marginTop="40dp"
+                                android:textColor="@color/black"
+                                android:fontFamily="@font/sb"
+                                />
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_width="150dp"
+                            android:layout_height="150dp"
+                            android:background="@drawable/shadow"
+                            android:orientation="vertical">
+
+                            <ImageView
+                                android:layout_width="40dp"
+                                android:layout_height="40dp"
+                                android:src="@drawable/star"
+                                android:layout_marginTop="15dp"
+                                android:layout_marginLeft="12dp"/>
+
+
+                            <TextView
+                                android:layout_marginTop="22dp"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="Предложения\nи скидки"
+                                android:textColor="@color/black"
+                                android:fontFamily="@font/sb"
+                                android:textSize="13dp"
+                                android:layout_marginLeft="15dp"
+                                />
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="Для вас"
+                                android:layout_marginLeft="15dp"
+                                android:textSize="13dp"
+                                android:layout_marginTop="5dp"
+                                android:textColor="#898989"
+                                android:fontFamily="@font/sb"
+                                />
+                        </LinearLayout>
+                    </LinearLayout>
+                </HorizontalScrollView>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:layout_marginTop="30dp">
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Рекомендуем"
+                        android:fontFamily="@font/sb"
+                        android:textSize="19dp"
+                        android:textColor="@color/black"
+                        />
+                    <Space
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"/>
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Ещё"
+                        android:fontFamily="@font/sb"
+                        android:textSize="16dp"
+                        android:textColor="#138127"
+                        />
+                </LinearLayout>
+
+                <HorizontalScrollView
+                    android:layout_marginTop="15dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:scrollbars="none">
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:gravity="center_vertical">
+
+                        <LinearLayout
+                            android:layout_width="150dp"
+                            android:layout_height="280dp"
+                            android:background="@drawable/shadow"
+                            android:orientation="vertical">
+
+                            <ImageView
+                                android:layout_width="match_parent"
+                                android:layout_height="220dp"
+                                android:src="@drawable/jaba"
+                                android:scaleType="fitXY" />
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="Рекламодатель\nООО «ЖАБЬЯ»"
+                                android:layout_marginLeft="15dp"
+                                android:textSize="11dp"
+                                android:layout_marginTop="10dp"
+                                android:textColor="#898989"
+                                android:fontFamily="@font/sb"
+                                />
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_width="150dp"
+                            android:layout_height="280dp"
+                            android:background="@drawable/shadow"
+                            android:orientation="vertical">
+
+                            <FrameLayout
+                                android:layout_width="150dp"
+                                android:layout_height="150dp">
+
+                                <ImageView
+                                    android:layout_width="match_parent"
+                                    android:layout_height="150dp"
+                                    android:src="@drawable/liagushka"
+                                    android:scaleType="fitXY"/>
+
+                                <TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginTop="5dp"
+                                    android:layout_marginLeft="5dp"
+                                    android:text="Промокод"
+                                    android:layout_gravity="top"
+                                    android:textSize="10dp"
+                                    android:textColor="#FFFFFF"
+                                    android:background="@drawable/text_background"
+                                    android:padding="5dp"
+                                    android:fontFamily="@font/sb"/>
+
+                                <TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:text="Реклама"
+                                    android:layout_gravity="bottom"
+                                    android:textSize="9dp"
+                                    android:textColor="#FFFFFF"
+                                    android:layout_marginLeft="5dp"
+                                    android:layout_marginBottom="5dp"
+                                    android:padding="2.5dp"
+                                    android:background="@drawable/advert_back"
+                                    android:fontFamily="@font/sb"/>
+                            </FrameLayout>
+
+
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="СберМаркет"
+                                android:layout_marginLeft="15dp"
+                                android:textSize="11dp"
+                                android:layout_marginTop="5dp"
+                                android:textColor="#898989"
+                                android:fontFamily="@font/sb"
+                                />
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="Скидка 30%\nна первый заказ"
+                                android:layout_marginLeft="15dp"
+                                android:textSize="13dp"
+                                android:layout_marginTop="5dp"
+                                android:textColor="@color/black"
+                                android:fontFamily="@font/sb"
+                                />
+
+                            <View
+                                android:layout_marginTop="15dp"
+                                android:layout_width="match_parent"
+                                android:layout_height="0.5dp"
+                                android:background="#898989"/>
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="Рекламодатель ООО\n«КРУТАЯ ЖАБА!»"
+                                android:layout_marginLeft="15dp"
+                                android:textSize="11dp"
+                                android:layout_marginTop="10dp"
+                                android:textColor="#898989"
+                                android:fontFamily="@font/sb"
+                                />
+
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_width="150dp"
+                            android:layout_height="280dp"
+                            android:background="@drawable/shadow"
+                            android:orientation="vertical">
+
+                            <FrameLayout
+                                android:layout_width="150dp"
+                                android:layout_height="150dp">
+
+                                <ImageView
+                                    android:layout_width="match_parent"
+                                    android:layout_height="150dp"
+                                    android:src="@drawable/liagushka"
+                                    android:scaleType="fitXY"/>
+
+                                <TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginTop="5dp"
+                                    android:layout_marginLeft="5dp"
+                                    android:text="Промокод"
+                                    android:layout_gravity="top"
+                                    android:textSize="10dp"
+                                    android:textColor="#FFFFFF"
+                                    android:background="@drawable/text_background"
+                                    android:padding="5dp"
+                                    android:fontFamily="@font/sb"/>
+
+                                <TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:text="Реклама"
+                                    android:layout_gravity="bottom"
+                                    android:textSize="9dp"
+                                    android:textColor="#FFFFFF"
+                                    android:layout_marginLeft="5dp"
+                                    android:layout_marginBottom="5dp"
+                                    android:padding="2.5dp"
+                                    android:background="@drawable/advert_back"
+                                    android:fontFamily="@font/sb"/>
+                            </FrameLayout>
+
+
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="СберМаркет"
+                                android:layout_marginLeft="15dp"
+                                android:textSize="11dp"
+                                android:layout_marginTop="5dp"
+                                android:textColor="#898989"
+                                android:fontFamily="@font/sb"
+                                />
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="Скидка 30%\nна первый заказ"
+                                android:layout_marginLeft="15dp"
+                                android:textSize="13dp"
+                                android:layout_marginTop="5dp"
+                                android:textColor="@color/black"
+                                android:fontFamily="@font/sb"
+                                />
+
+                            <View
+                                android:layout_marginTop="15dp"
+                                android:layout_width="match_parent"
+                                android:layout_height="0.5dp"
+                                android:background="#898989"/>
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="Рекламодатель ООО\n«КРУТАЯ ЖАБА!»"
+                                android:layout_marginLeft="15dp"
+                                android:textSize="11dp"
+                                android:layout_marginTop="10dp"
+                                android:textColor="#898989"
+                                android:fontFamily="@font/sb"
+                                />
+
+                        </LinearLayout>
+                    </LinearLayout>
+                </HorizontalScrollView>
             </LinearLayout>
         </LinearLayout>
     </ScrollView>
